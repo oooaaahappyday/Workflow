@@ -1,5 +1,7 @@
-define(["./getAge"], function (getAge) {
-	var comment = function () {
+define(["./getAge"], 
+	function (getAge) {
+	return {
+		comment: function () {
 	    var message;
 	    // var age = getAge.age();
 	    var age = getAge.age;
@@ -16,8 +18,6 @@ define(["./getAge"], function (getAge) {
 	    	alert(message);
 	    }
 		return message;
-	}
-	return {
-		comment: comment
+		}
 	};
 });
