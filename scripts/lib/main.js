@@ -5,13 +5,22 @@ requirejs.config({
         jquery: '../lib/jquery'
     }
 });
-requirejs(['lib/jquery', 'getAge', 'ageComment', 'module'],
-	function(jquery, getAge, ageComment, module) {
+requirejs(['jquery', 'getAge', 'ageComment', 'module'],
+	function($, getAge, ageComment, module) {
 		// console.log(getAge.age());
 		$(document).ready(function () {
-			console.log(getAge.age);
-			console.log(ageComment.comment());
-		})
+			var $ageField = $('#age');
+			var $submit = $('#submit');
+			console.log($submit);
+			$submit.on('click', function () {
+				var age = $ageField.val();
+				getAge.age = age;
+				console.log("age : "+age);
+				ageComment.comment();
+			});
+			// console.log(getAge.age);
+			// console.log(ageComment.comment());
+		});
 	},
 
 	function (err) {

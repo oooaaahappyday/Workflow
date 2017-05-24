@@ -1,8 +1,9 @@
 define(["./getAge"], function (getAge) {
 	var comment = function () {
 	    var message;
-	    var age = getAge.age();
-	    // var age = getAge.age;
+	    // var age = getAge.age();
+	    var age = getAge.age;
+	    console.log("echo");
 
 	    if (age <= 10) {
 	    	message = "Vous êtes trop jeune pour jouer au jeu Titre.";
