@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/oooaaahappyday/Workflow/issues"
   },
-  "homepage": "https://github.com/oooaaahappyday/Workflow#readme"
+  "homepage": "https://github.com/oooaaahappyday/Workflow#readme",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
 }
