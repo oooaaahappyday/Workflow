@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/oooaaahappyday/Workflow#readme",
   "dependencies": {
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.0",
+    "requirejs": "^2.3.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
